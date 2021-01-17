@@ -1,14 +1,14 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import md5 = require('md5');
-import md5File = require('md5-file');
+import * as md5 from 'md5';
+import * as md5File from'md5-file';
 
-class LiteMd5 {
+class Md5Lite {
     
     constructor(private BUFFER_SIZE:number=100000) {
     }
  
-    liteMd5(filePath:string):string {
+    md5Lite(filePath:string):string {
         const st = fs.statSync(path.join(__dirname, filePath));
 
         // 대용량의 경우만 처리
@@ -26,8 +26,7 @@ class LiteMd5 {
 
 }
 
-export function liteMd(filePath: string): string {
-    console.log(__dirname)
-   return new LiteMd5().liteMd5(filePath);
+export function md5Lite(filePath: string): string {
+   return new Md5Lite().md5Lite(filePath);
 }
 

@@ -2,24 +2,36 @@
   "name": "md5-lite",
   "version": "1.0.0",
   "description": "MD5 hashing with part of a file",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types" : "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "postbuild": "cp -R node_modules dist/node_modules"
   },
   "keywords": [
     "md5",
     "fast"
   ],
-  "author": "lahuman",
+  "author": "Daniel Lim <lahuman@daum.net>",
+  "homepage":"https://github.com/lahuman/md5-lite#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lahuman/md5-lite.git"
+  },
   "license": "MIT",
   "dependencies": {
-    "@types/md5": "^2.2.1",
-    "@types/md5-file": "^4.0.2"
+    "md5": "^2.3.0",
+    "md5-file": "^5.0.0"
   },
   "devDependencies": {
+    "@types/md5-file": "^4.0.2",
+    "@types/md5": "^2.2.1",
     "@types/node": "^14.14.21",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
   },
-  "files":["dist"]
+  "files": [
+    "dist"
+  ]
 }
