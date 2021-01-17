@@ -11,8 +11,8 @@ bower install md5-lite --save
 
 ### Javascript
 ```javascript
-const { md5Lite } = require('md5-lite');
-console.log(md5('./filepath'));
+const {md5Lite} = require('md5-lite');
+console.log(md5Lite('./filepath'));
 ```
 ```sh
 0486c21a4d40d0f3b0bdad3925db439e
@@ -20,7 +20,7 @@ console.log(md5('./filepath'));
 
 ### TypeScript
 ```typescript
-import { md5Lite } from 'md5-lite';
+import {md5Lite} from 'md5-lite';
 console.log(md5Lite('./filepath'))
 ```
 ```sh
