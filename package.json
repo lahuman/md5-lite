@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "MD5 hashing with part of a file",
   "main": "dist/index.js",
-  "types" : "dist/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
@@ -14,7 +14,7 @@
     "fast"
   ],
   "author": "Daniel Lim <lahuman@daum.net>",
-  "homepage":"https://github.com/lahuman/md5-lite#readme",
+  "homepage": "https://github.com/lahuman/md5-lite#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lahuman/md5-lite.git"
