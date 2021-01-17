@@ -1,0 +1,25 @@
+{
+  "name": "md5-lite",
+  "version": "1.0.0",
+  "description": "MD5 hashing with part of a file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "md5",
+    "fast"
+  ],
+  "author": "lahuman",
+  "license": "MIT",
+  "dependencies": {
+    "@types/md5": "^2.2.1",
+    "@types/md5-file": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.21",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  },
+  "files":["dist"]
+}
